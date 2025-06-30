@@ -7,7 +7,7 @@ answer = ""
 
 # Generating a random number
 random_number = random.randint(1, 12)
-print(random_number)
+# print(random_number)    # Uncomment for debugging
 
 # Control Flow 
 if random_number == 1:
@@ -39,11 +39,11 @@ else:
 
 # Control flow of name
 if name == "":
-  print(f"{question}")
+  print(f"Question: {question}")
 # Control flow of question
-if question == "":
-  question = input("Please ask a question: ")
+elif question == "":
+  print("You must ask a question!")
 else:
-  print(f"{name} asks a question: {question}")
+  print(f"{name} asks: {question}")
 # See the result
 print(f"Magic 8-Ball's answer: {answer}")
